@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEERS</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/map.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a class="logo" href="index.html"><img src="image/logo.png" alt="Logo"></a>
+            <nav class="menu">
+                <ul>
+                    <li><a href="introduce.html">사이트 소개</a></li>
+                    <li><a href="test.html">오늘의 칵테일</a></li>
+                    <li><a href="map.html">주변 바 찾기</a></li>
+                    <li><a href="mypage.html">마이페이지</a></li>
+                </ul>
+            </nav>   
+            <div class="user">
+                <a href="list.html"><img src="image/search-24.svg" alt="search" style="cursor: pointer;"></a>
+                <a href="login.html">로그인</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+    <h1>주변 바 찾기</h1>
+    <hr>
+    <div class="container-wrapper">
+        <div class="map">
+            <p>지도</p>
+            <div id="kakao-map" class="kakao-map"></div>
+        </div>
+        <div class="shop-list">
+            <p class="shop-title">내 주변 가게</p>
+            <div class="shop-scroll-area">
+                <div class="shop">
+                    <div class="shop-num">1</div>
+                    <div class="shop-text">
+                        <div class="shop-header">
+                            <h6>49라운지</h6>
+                            <div class="shop-distance">850m</div>
+                        </div>
+                        <p>주소 : 경기 시흥시 중심상가3길 26 2층</p>
+                        <p>운영 시간 : 18:00 - 05:00</p>
+                    </div>
+                </div>
+                <div class="shop">
+                    <div class="shop-num">2</div>
+                    <div class="shop-text">
+                        <div class="shop-header">
+                            <h6>헤네시BAR</h6>
+                            <div class="shop-distance">1.2Km</div>
+                        </div>
+                        <p>주소 : 경기 시흥시 중심상가로 150 2층</p>
+                        <p>운영 시간 : 19:50 - 03:00</p>
+                    </div>
+                </div>
+                <div class="shop">
+                    <div class="shop-num">3</div>
+                    <div class="shop-text">
+                        <div class="shop-header">
+                            <h6>제트</h6>
+                            <div class="shop-distance">550m</div>
+                        </div>
+                        <p>주소 : 경기 시흥시 평안상가4길 16-5</p>
+                        <p>운영 시간 : 19:00 - 03:00</p>
+                    </div>
+                </div>
+                <div class="shop">
+                    <div class="shop-num">4</div>
+                    <div class="shop-text">
+                        <div class="shop-header">
+                            <h6>원오뎅바</h6>
+                            <div class="shop-distance">520m</div>
+                        </div>
+                        <p>주소 : 경기 시흥시 중심상가로 323</p>
+                        <p>운영 시간 : 18:00 - 06:00</p>
+                    </div>
+                </div>
+                <div class="shop">
+                    <div class="shop-num">5</div>
+                    <div class="shop-text">
+                        <div class="shop-header">
+                            <h6>호수꼬치 정왕점</h6>
+                            <div class="shop-distance">1.3Km</div>
+                        </div>
+                        <p>주소 : 경기 시흥시 마유로 416</p>
+                        <p>운영 시간 : 17:00 - 01:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-container">
+        <div class="footer1">
+            <div class="footer-menu">
+                <img class="footer-logo" src="image/logo.png" alt="">
+                <a href="#">사이트 소개</a>
+                <a href="#">오늘의 칵테일</a>
+                <a href="#">주변 바 찾기</a>
+                <a href="#">마이페이지</a>
+            </div>
+            <div class="footer-text">
+                <p>치얼스 유한회사 | 대표이사: 성유승, 장준영, 권지민, 김재경, 채다현 | 주소: 경기도 시흥시 산기대학로 237 | 전화 : 080-123-1234 | 사업자등록번호: 000-00-00000</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright © 2025 Cheers Inc. 모든 권리 보유.</p>
+            <a href="#"> 개인정보 처리방침 |</a>
+            <a href="#"> 약관 |</a>
+            <a href="#"> 법적고지 |</a>
+            <a href="#"> 사이드맵</a>
+        </div>
+    </div>
+</footer>
+<script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=66bb56bd796e4183ae7906d8b515a0fe&autoload=false&libraries=services"></script>
+<script src="js/map.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEERS</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/list.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a class="logo" href="index.html"><img src="image/logo.png" alt="Logo"></a>
+            <nav class="menu">
+                <ul>
+                    <li><a href="introduce.html">사이트 소개</a></li>
+                    <li><a href="test.html">오늘의 칵테일</a></li>
+                    <li><a href="map.html">주변 바 찾기</a></li>
+                    <li><a href="mypage.html">마이페이지</a></li>
+                </ul>
+            </nav>  
+            <div class="user">
+                <a href="list.html"><img src="image/search-24.svg" alt="search" style="cursor: pointer;"></a>
+                <a href="login.html">로그인</a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1>검색결과</h1>
+        <div class="search-option">
+          <div class="filters">
+            <select id="categoryFilter">
+            <option value="">카테고리</option>
+            </select>
+            <select id="ingredientFilter">
+            <option value="">재료</option>
+            </select>
+            <select id="AlcoholFilter">
+            <option value="">알코올 유무</option>
+            </select>
+        </div>
+        <div class="search-bar">
+            <input id="text" type="text" placeholder="칵테일 명, 재료를 검색하세요." onkeydown="handleKeySearch()">
+            <img class="search-icon" src="image/search-28.svg" alt="검색" style="cursor: pointer;" onclick="handleClickSearch()">
+        </div>
+        </div>
+        <!-- 한 줄에 이미지 최대 6개라서 확인용으로 7개 이미지 박스 넣어둠 -->
+        <div class="list-image">
+            
+        </div>
+
+        <div class="popup-container" id="popup-container">
+            <div class="popup" id="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup()">×</span>
+                    <img src="https://img.daily.co.kr/@files/www.daily.co.kr/content/food/2017/20170829/ac4cd7b2d0df0211dda00cc4e6ca3c35.jpg" alt="">
+                    <div class="popup-text">
+                        <h2>Orange Scented Hot Chocolate</h2>
+                        <span class="popup-caption">그린 샤르트뢰즈 22.5ml</span>
+                        <p>진, 그린 샤르트뢰즈, 마라스키노 리큐어, 라임 쥬스를 같은 양으로 섞어 셰이커에 넣고 얼음을 넣어 섞습니다. (진과 라임 대신 위스키나 레몬으로 대체해도 됩니다.) </p>
+                    </div>
+                    <div class="popup-actions">
+                        <span class="heart-btn" onclick="toggleHeart(this)">♡</span>
+                        <div class="share-btn">공유하기</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer1">
+                <div class="footer-menu">
+                    <img class="footer-logo" src="image/logo.png" alt="">
+                    <a href="#">사이트 소개</a>
+                    <a href="#">오늘의 칵테일</a>
+                    <a href="#">주변 바 찾기</a>
+                    <a href="#">마이페이지</a>
+                </div>
+                <div class="footer-text">
+                    <p>치얼스 유한회사 | 대표이사: 성유승, 장준영, 권지민, 김재경, 채다현 | 주소: 경기도 시흥시 산기대학로 237 | 전화 : 080-123-1234 | 사업자등록번호: 000-00-00000</p>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright © 2025 Cheers Inc. 모든 권리 보유.</p>
+                <a href="#"> 개인정보 처리방침 |</a>
+                <a href="#"> 약관 |</a>
+                <a href="#"> 법적고지 |</a>
+                <a href="#"> 사이드맵</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/list.js"></script>
+</body>
+</html>

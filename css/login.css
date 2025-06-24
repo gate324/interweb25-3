@@ -1,0 +1,237 @@
+* {
+  margin: 0; 
+  padding: 0;
+  font-family: "Pretendard Variable";
+  box-sizing: border-box;
+  user-select: none;
+}
+body {
+  background: #121212;
+}
+.fixed-container {
+  width: 1440px;
+  height: calc(100vh - 100px);
+  margin: 0 auto;
+  display: flex;
+}
+
+.image-box {
+  flex: 1;
+  background-image: url("https://images.unsplash.com/photo-1550424844-f7b914439c1b?q=80&w=1170&auto=format&fit=crop");
+  background-size: 750px auto;
+  background-position: 60% center;
+  position: relative;
+  background-repeat: no-repeat;
+  animation: flicker 5.5s infinite ease-in-out;
+  filter: contrast(86%);
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0.3;
+  }
+}
+
+.login-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  padding: 60px 40px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.login-style .sign-in,
+.login-style .sign-up,
+.login-form .group .check {
+  display: none;
+}
+
+.login-style {
+  min-width: 300px;
+  height: 450px;
+}
+
+.login-style .tab {
+  font-size: 22px;
+  margin-right: 15px;
+  cursor: pointer;
+  padding-bottom: 5px;
+  margin: 0 15px 10px 0;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+  color: #aaa;
+}
+
+.login-style .sign-in:checked ~ label[for="tab-1"],
+.login-style .sign-up:checked ~ label[for="tab-2"] {
+  color: #fff;
+  border-color: #1161ee;
+}
+
+.login-form {
+  margin-top: 30px;
+}
+
+.login-form .group {
+  margin-bottom: 15px;
+}
+
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button {
+  width: 100%;
+  max-width: 500px;
+  color: #fff;
+  display: block;
+}
+
+.login-form .group .input {
+  border: none;
+  padding: 15px 20px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.login-form .group input[data-type="password"] {
+  -webkit-text-security: circle;
+}
+
+.login-form .group .label {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.login-form .group .button {
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: #1161ee;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.login-form .group .button:hover {
+  background: #1454c4;
+}
+
+.kakao-login {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.kakao-login img {
+  max-width: 300px;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.kakao-login img:hover {
+  opacity: 0.85;
+}
+
+.login-form .group label .icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  position: relative;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.login-form .group label .icon:before,
+.login-form .group label .icon:after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.login-form .group label .icon:before {
+  left: 3px;
+  width: 5px;
+  bottom: 6px;
+  transform: scale(0) rotate(0);
+}
+
+.login-form .group label .icon:after {
+  top: 6px;
+  right: 0;
+  transform: scale(0) rotate(0);
+}
+.login-form .group .check + label {
+  color: #fff;
+}
+.login-form .group .check:checked + label {
+  color: #fff;
+}
+
+.login-form .group .check:checked + label .icon {
+  background: #1161ee;
+}
+
+.login-form .group .check:checked + label .icon:before {
+  transform: scale(1) rotate(45deg);
+}
+
+.login-form .group .check:checked + label .icon:after {
+  transform: scale(1) rotate(-45deg);
+}
+
+.in-wrap,
+.up-wrap {
+  flex-grow: 1;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.login-style .sign-in:checked ~ .login-form .in-wrap {
+  display: block;
+}
+
+.login-style .sign-up:checked ~ .login-form .up-wrap {
+  display: block;
+}
+
+.warning-msg {
+  color: #f66;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+  height: 16px;
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  color: #555;
+  user-select: none;
+}

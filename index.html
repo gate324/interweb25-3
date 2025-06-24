@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEERS</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+    <div id="toast"></div>
+    <header>
+        <div class="header-container">
+            <a class="logo" href="index.html"><img src="image/logo.png" alt="Logo"></a>
+            <nav class="menu">
+                <ul>
+                    <li><a href="introduce.html">사이트 소개</a></li>
+                    <li><a href="test.html">오늘의 칵테일</a></li>
+                    <li><a href="map.html">주변 바 찾기</a></li>
+                    <li><a href="mypage.html">마이페이지</a></li>
+                </ul>
+            </nav>  
+            <div class="user">
+                <a href="list.html"><img src="image/search-24.svg"style="cursor: pointer;" alt="search"></a>
+                <a href="login.html">로그인</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+    <div class="custom-cursor" id="customCursor">
+        <img class="cursor-basic" src="image/null.png" alt="cursor">
+    </div>
+        <div class="herosec-container">
+            <div class="search-bar">
+            <input id="text" type="text" placeholder="칵테일 명, 재료를 입력해주세요." onkeydown="enterSearch(event)">
+            <button onclick="goSearch()">
+                <img src="image/search-24.svg" style="cursor: pointer;" alt="">
+            </button>
+            </div>
+        </div>
+        <!-- <h2>인기 칵테일 리스트</h2> -->
+        <div class="slider">
+            <h3>인기 칵테일 리스트</h3>
+            <div class="slide-box">
+                <div class="slide-item">
+                    <img src="https://www.thecocktaildb.com/images/media/drink/metwgh1606770327.jpg" alt="Mojito">
+                    <div class="overlay-text">클릭해서 이름 복사하기</div>
+                </div>
+                <div class="slide-item">
+                    <img src="https://www.thecocktaildb.com/images/media/drink/vrwquq1478252802.jpg" alt="Old Fashioned">
+                    <div class="overlay-text">클릭해서 이름 복사하기</div>
+                </div>
+                <div class="slide-item">
+                    <img src="https://www.thecocktaildb.com/images/media/drink/nkwr4c1606770558.jpg" alt="Long Island Tea">
+                    <div class="overlay-text">클릭해서 이름 복사하기</div>
+                </div>
+                <div class="slide-item">
+                    <img src="https://www.thecocktaildb.com/images/media/drink/qgdu971561574065.jpg" alt="Negroni">
+                    <div class="overlay-text">클릭해서 이름 복사하기</div>
+                </div>
+                <div class="slide-item">
+                    <img src="https://www.thecocktaildb.com/images/media/drink/hbkfsh1589574990.jpg" alt="Whiskey Sour">
+                    <div class="overlay-text">클릭해서 이름 복사하기</div>
+                </div>
+                <div class="slide-item">
+                    <img src="https://www.thecocktaildb.com/images/media/drink/6ck9yi1589574317.jpg" alt="Dry Martini">
+                    <div class="overlay-text">클릭해서 이름 복사하기</div>
+                </div>
+                <div class="slide-item">
+                    <img src="https://www.thecocktaildb.com/images/media/drink/mrz9091589574515.jpg" alt="Daiqiri">
+                    <div class="overlay-text">클릭해서 이름 복사하기</div>
+                </div>
+                <div class="slide-item">
+                    <img src="https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg" alt="Margarita">
+                    <div class="overlay-text">클릭해서 이름 복사하기</div>
+                </div>
+                <div class="slide-item">
+                    <img src="https://www.thecocktaildb.com/images/media/drink/qcgz0t1643821443.jpg" alt="Gin Tonic">
+                    <div class="overlay-text">클릭해서 이름 복사하기</div>
+                </div>
+                <div class="slide-item">
+                    <img src="https://www.thecocktaildb.com/images/media/drink/1mvjxg1504348579.jpg" alt="Casino">
+                    <div class="overlay-text">클릭해서 이름 복사하기</div>
+                </div>
+                <div class="slide-item">
+                    <img src="https://www.thecocktaildb.com/images/media/drink/90etyl1504884699.jpg" alt="Irish Cream">
+                    <div class="overlay-text">클릭해서 이름 복사하기</div>
+                </div>
+                <div class="slide-item">
+                    <img src="https://www.thecocktaildb.com/images/media/drink/jofsaz1504352991.jpg" alt="White Lady">
+                    <div class="overlay-text">클릭해서 이름 복사하기</div>
+                </div>
+            </div>
+        </div>
+        <div class="cocktail-list">
+            <div class="non-list">
+                <!-- <img src="https://i.namu.wiki/i/1KGp1UsF2j9s1aQgDeJAkOHnqDIDnCPuhayD3a42vkpCwpyVq1YN471e8nVIh61JQ5w7qOvAW7k1DjpEVxaJLqWG4aayxfSOdOsLe_o-1DqbHAHCjRhVeNmyANW-68Yb1h-xqV6769YWgO-TE4GiBA.webp" alt=""> -->
+                 <img src="https://images.unsplash.com/photo-1527661591475-527312dd65f5?q=80&w=715&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="list-text">
+                    <h3>논알콜 칵테일</h3>
+                    <p>술 없이도 분위기는 그대로.<br>상큼하고 산뜻한 논알콜 칵테일로<br>누구나 부담없이 즐겨보세요.</p>
+                    <a href="list.html?alcohol=Non%20alcoholic">View more</a>
+                </div>
+            </div>
+            <div class="alc-list">
+                <!-- <img src="https://i.namu.wiki/i/L2RsyVmjgKKVhOlzkh0bP3aCHFABQMueUg9XxcO7tz5adtY8jgS27EQdbPfwy3emVKFv4l60brHOJBeLPYLR26B1qyobSJ3Zr90tFobUZLB72H1P8htamML8-zEp51NJ6Ukz2z-w_e02T6MMUsVs7g.webp" alt=""> -->
+                 <img src="https://images.unsplash.com/photo-1671061807120-0fabe4fdd073?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="list-text">
+                    <h3>알코올 칵테일</h3>
+                    <p>오늘의 기분에 맞는 한 잔.<br>도수, 풍미, 스타일별로<br>당신만의 칵테일을 찾아보세요.</p>
+                    <a href="list.html?alcohol=Alcoholic">View more</a>
+                </div>
+            </div>
+        </div>
+        <div class="today-cocktail">
+            <img src="https://img.freepik.com/free-photo/man-holding-colorful-cocktail-glasses_23-2148454465.jpg?uid=R144726362&ga=GA1.1.1483683431.1748351958&semt=ais_items_boosted&w=740" alt="">
+            <div class="today-text">
+                <h3>오늘의 칵테일</h3>
+                <p>기분, 취향, 재료를 선택하면<br>당신에게 딱 맞는 칵테일을 추천해드려요.<br>간단한 질문에 답하고<br>오늘의 한 잔을 만나보세요.</p>
+                <a href="test.html">Find My Cocktail</a>
+            </div>
+        </div>
+        <div class="my-recipe">
+            <img src="https://images.unsplash.com/photo-1578823057415-e4d01518796d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="opacity: 0.5;" alt="">
+            <div class="recipe-text">
+                <h3>마이 레시피</h3>
+                <p>내가 만든 칵테일을 사진과 함께 저장하고,<br>관심 등록한 레시피도 한 곳에서 모아볼 수 있어요.<br>나만의 칵테일 기록장, 지금부터 시작해보세요.</p>
+                <a href="mypage.html">View My Recipes</a>
+            </div>
+        </div>
+        <div class="kakao-map">
+            <h3>주변 바 찾기</h3>
+            <a href="map.html"><div id="map" style="width:100%;height:550px;"></div></a>
+            <div id="places-list" style="display:none;"></div>
+            </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer1">
+                <div class="footer-menu">
+                    <img class="footer-logo" src="image/logo.png" alt="">
+                    <a href="#">사이트 소개</a>
+                    <a href="#">오늘의 칵테일</a>
+                    <a href="#">주변 바 찾기</a>
+                    <a href="#">마이페이지</a>
+                </div>
+                <div class="footer-text">
+                    <p>치얼스 유한회사 | 대표이사: 성유승, 장준영, 권지민, 김재경, 채다현 | 주소: 경기도 시흥시 산기대학로 237 | 전화 : 080-123-1234 | 사업자등록번호: 000-00-00000</p>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright © 2025 Cheers Inc. 모든 권리 보유.</p>
+                <a href="#">개인정보 처리방침</a>
+                <a href="#">약관</a>
+                <a href="#">법적고지</a>
+                <a href="#">사이드맵</a>
+            </div>
+        </div>
+    </footer>
+
+<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=66bb56bd796e4183ae7906d8b515a0fe&libraries=services"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>

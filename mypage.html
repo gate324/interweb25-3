@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEERS</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/mypage.css" rel="stylesheet">
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a class="logo" href="index.html"><img src="image/logo.png" alt="Logo"></a>
+            <nav class="menu">
+                <ul>
+                    <li><a href="introduce.html">사이트 소개</a></li>
+                    <li><a href="test.html">오늘의 칵테일</a></li>
+                    <li><a href="map.html">주변 바 찾기</a></li>
+                    <li><a href="mypage.html">마이페이지</a></li>
+                </ul>
+            </nav>  
+            <div class="user">
+                <a href="list.html"><img src="image/search-24.svg" alt="search"></a>
+                <a href="login.html">로그인</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+            <h1>마이페이지</h1>
+            <hr>
+            <div class="mypage-menu">
+                <p>내 정보</p>
+                <p>찜한 칵테일</p>
+                <p>테스트 결과</p>
+                <p>나의 레시피</p>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="upload">
+                    <div class="upload-box">
+                        <input type="text" class="title-input" placeholder="제목을 입력하세요">
+                        <!-- 클릭 가능한 이미지 업로드 박스 -->
+                        <div class="image-upload-wrapper" id="imageUploadWrapper"></div>
+                        <textarea class="content-input" placeholder="내용을 입력하세요"></textarea>
+                    </div>
+                    <button class="save-button">저장하기</button>
+                </div>
+                <div class="memo-list">
+                    <h6>메모 기록</h6>
+                    <div class="memo">
+                        <p class="date">2025-06-17</p>
+                        <p>친구들이랑 칵테일</p>
+                        <div class="memo-detail">
+                            <img src="https://wine21.speedgabia.com/NEWS_MST/froala/202108/20210805084844543428.jpg" alt="칵테일 이미지">
+                            <p>시험 끝나고 종강 전에 친구들이랑 한번 마셨다. 근데 레시피가 기억 안남.</p>
+                        </div>
+                    </div>
+                    <div class="memo">
+                        <p class="date">2025-06-14</p>
+                        <p>가족들이랑 칵테일</p>
+                        <div class="memo-detail">
+                            <img src="https://pds.joongang.co.kr/news/component/tong/201608/17/00746_.jpg" alt="칵테일 이미지">
+                            <p>피치트리랑 모구모구 섞으면 맛있다.</p>
+                        </div>
+                    </div>
+                    <div class="memo">
+                        <p class="date">2025-06-05</p>
+                        <p>커피로 칵테일 만들기</p>
+                        <div class="memo-detail">
+                            <img src="https://www.bluer.co.kr/images/es_f6e367713bda45e1988e2a1b15498197.jpg" alt="칵테일 이미지">
+                            <p>커피로 칵테일 만들었는데 나는 요리하면 안 된다는 걸 까먹었다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer1">
+                <div class="footer-menu">
+                    <img class="footer-logo" src="image/logo.png" alt="">
+                    <a href="#">사이트 소개</a>
+                    <a href="#">오늘의 칵테일</a>
+                    <a href="#">주변 바 찾기</a>
+                    <a href="#">마이페이지</a>
+                </div>
+                <div class="footer-text">
+                    <p>치얼스 유한회사 | 대표이사: 성유승, 장준영, 권지민, 김재경, 채다현 | 주소: 경기도 시흥시 산기대학로 237 | 전화 : 080-123-1234 | 사업자등록번호: 000-00-00000</p>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright © 2025 Cheers Inc. 모든 권리 보유.</p>
+                <a href="#"> 개인정보 처리방침 |</a>
+                <a href="#"> 약관 |</a>
+                <a href="#"> 법적고지 |</a>
+                <a href="#"> 사이드맵</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/mypage.js">
+    </script>
+</body>
+</html>

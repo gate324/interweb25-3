@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Pretendard Variable";
+    user-select: none;
+}
+body {
+    background: #121212;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+.slider-container {
+    position: relative;
+    width: 1440px;
+    height: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 48px;
+}
+.slides {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    height: 100%;
+}
+.slide {
+    min-width: 1440px;
+    height: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+
+    border-radius: 50px;
+}
+.slide:first-child {
+    background-image: url(https://images.unsplash.com/photo-1727188539251-af4d069eecfd?q=80&w=1798&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    /* 이스터에그 배경 */
+    /* background-image: url(https://www.ddengle.com/files/attach/images/136478/745/558/019/9cb58def31da0db73d5382703692ea8e.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide:nth-child(2) {
+    background-image: url(https://images.unsplash.com/photo-1614118990889-4805ae35a01b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide:nth-child(3) {
+    background-image: url(https://images.unsplash.com/photo-1665893985985-db4ececc8e30?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide:nth-child(4) {
+    background-image: url(https://images.unsplash.com/photo-1517512006864-7edc3b933137?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-color: #464646;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide:last-child{
+    background-image: url(https://images.unsplash.com/photo-1667205214054-d0fe7a9c1a47?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.text {
+    color: white;
+}
+h3 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.text h6 {
+    font-size: 150px;
+    opacity: 10%;
+    color: white;
+    font-family: "Mr Dafoe", cursive;
+    font-weight: 100;
+    user-select: none;
+    text-align: right;
+    line-height: 100px;
+
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+.text p {
+    font-size: 16px;
+    text-align: center;
+}
+.share {
+    display: block;
+    text-align: center;
+}
+.share a {
+    font-size: 20px;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.text a:hover {
+    color: cyan;
+}
+.dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dots span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.dots span.active {
+    background-color: #333;
+}
